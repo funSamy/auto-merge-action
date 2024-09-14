@@ -20,7 +20,7 @@ The time we greeted you.
 ## Example usage
 
 ```yaml
-uses: funSamy/auto-merge-action@v1.0.0
+uses: funSamy/auto-merge-action@v1.1
 with:
   who-to-greet: 'Mona the Octocat'
 ```
