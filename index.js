@@ -1,13 +1,13 @@
-import {
+const {
   getInput,
   setFailed,
   error,
   notice,
   warning,
   setOutput,
-} from "@actions/core";
-import { getOctokit, context as _context } from "@actions/github";
-import { exit } from "node:process";
+} = require("@actions/core");
+const { getOctokit, context: _context } = require("@actions/github");
+const { exit } = require("node:process");
 
 const githubToken = getInput("github-token", {
   required: true,
@@ -117,7 +117,7 @@ function logToActions(message) {
 }
 
 try {
-  await run();
+  run();
 } catch (error) {
   setFailed(error.message);
 }

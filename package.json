@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Automatically merge pull request when all the checks have passed",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "build": "ncc build index.js --license licenses.txt -m"
   },
