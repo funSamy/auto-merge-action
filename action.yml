@@ -8,7 +8,6 @@ inputs:
   github-token: # id of input
     description: "Github token"
     required: true
-    deprecationMessage: "Please use `github-token` instead"
   merge-method: # id of input
     description: "Merge method"
     required: false
